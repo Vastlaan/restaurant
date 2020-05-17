@@ -1,0 +1,12 @@
+@import "../main.module.scss";
+
+.header {
+  min-height: calc(100vh - 10.5rem);
+  background-position: center;
+  background-size: cover;
+  object-fit: fill;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
