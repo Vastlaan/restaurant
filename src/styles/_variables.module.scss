@@ -1,0 +1,18 @@
+//COLORS
+
+:root {
+  --color-primary-dark: #6d0101;
+  --color-primary: #d41e00;
+  --color-secondary: #d2aa5c;
+  --color-secondary-light: #ecd444;
+  --color-secondary-light-2: #feeba0;
+  --color-grey: #474747;
+
+  --bg-color: #fff;
+}
+
+//FONTS
+@import url("https://fonts.googleapis.com/css2?family=Exo:wght@100;200;300;400;500;600;700&family=Raleway:wght@100;200;300;400;500;600;700;800&display=swap");
+
+$font-exo: "Exo", sans-serif;
+$font-raleway: "Raleway", sans-serif;

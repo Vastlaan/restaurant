@@ -1,0 +1,23 @@
+*,
+::after,
+::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+  font-family: $font-raleway;
+  font-size: 50%;
+
+  @include respond(m) {
+    font-size: 55%;
+  }
+  @include respond(l) {
+    font-size: 62.5%;
+  }
+  @include respond(xxl) {
+    font-size: 100%;
+  }
+}
