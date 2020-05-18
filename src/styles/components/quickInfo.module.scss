@@ -1,0 +1,29 @@
+@import "../main.module.scss";
+.info {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin: 0 auto;
+  padding: 2rem;
+
+  h3 {
+    font-family: $font-dancing;
+    font-size: 2.2rem;
+    color: var(--color-primary);
+    letter-spacing: 0.2rem;
+  }
+  h1 {
+    font-family: $font-exo;
+    font-size: 3rem;
+    text-transform: uppercase;
+    color: var(--color-font);
+    margin: 1rem auto;
+  }
+
+  div {
+    width: 10%;
+    height: 1px;
+    background-color: var(--color-primary-dark);
+  }
+}

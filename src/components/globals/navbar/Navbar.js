@@ -2,7 +2,7 @@ import React, { useState } from "react"
 import styles from "../../../styles/components/navbar.module.scss"
 import NavbarHeader from "./NavbarHeader"
 import NavbarLinks from "./NavbarLinks"
-import NavbarIcons from "./NavbarIcons"
+import NavbarIcons from "../Icons"
 
 function Navbar() {
   const [open, setOpen] = useState(false)

@@ -1,0 +1,21 @@
+@import "../main.module.scss";
+.section {
+  margin: 0 auto;
+  padding: 2rem 0;
+  width: 90vw;
+  //text
+  p {
+    margin: 0 auto;
+    font-family: $font-raleway;
+    font-size: 1.8rem;
+    text-align: center;
+
+    @include respond(m) {
+      width: 70%;
+    }
+  }
+  //button
+  a {
+    @include button("secondary");
+  }
+}

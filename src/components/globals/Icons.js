@@ -2,7 +2,7 @@ import React, { useState } from "react"
 
 import { FaTwitter, FaInstagram, FaFacebookSquare } from "react-icons/fa"
 
-function NavbarIcons({ styles }) {
+function Icons({ styles }) {
   const [icons, setIcons] = useState([
     {
       id: "0",
@@ -33,4 +33,4 @@ function NavbarIcons({ styles }) {
   )
 }
 
-export default NavbarIcons
+export default Icons

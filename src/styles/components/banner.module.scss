@@ -20,19 +20,6 @@
   }
 
   a {
-    display: block;
-    text-decoration: none;
-    padding: 1rem 3rem;
-    color: var(--bg-color);
-    margin: 2rem auto;
-    border: 1px solid var(--bg-color);
-    font-family: $font-exo;
-    font-size: 2rem;
-    transition: all 0.3s;
-
-    &:hover {
-      background-color: var(--bg-color);
-      color: var(--color-font);
-    }
+    @include button("main");
   }
 }
