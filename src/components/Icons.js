@@ -3,7 +3,7 @@ import React, { useState } from "react"
 import { FaTwitter, FaInstagram, FaFacebookSquare } from "react-icons/fa"
 
 function Icons({ styles }) {
-  const [icons, setIcons] = useState([
+  const [icons] = useState([
     {
       id: "0",
       icon: <FaFacebookSquare style={{ color: "blue" }} />,

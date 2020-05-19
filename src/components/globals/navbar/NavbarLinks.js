@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react"
 import { Link } from "gatsby"
 
 function NavbarLinks({ styles, open }) {
-  const [links, setLinks] = useState([
+  const [links] = useState([
     {
       id: 0,
       path: "/",
