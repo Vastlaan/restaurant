@@ -1,0 +1,57 @@
+.product {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-gap: 1rem;
+  margin: 5rem auto;
+
+  @include respond(m) {
+    margin: 2rem auto;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  &__main {
+    display: flex;
+    flex-direction: column;
+    padding: 0 1rem;
+    h3 {
+      width: 100%;
+      background-image: linear-gradient(
+        to bottom right,
+        var(--color-primary),
+        var(--color-primary-dark)
+      );
+      color: var(--bg-color);
+      text-align: center;
+      font-family: $font-exo;
+      font-size: 2.2rem;
+      font-weight: 300;
+      text-transform: capitalize;
+    }
+
+    div {
+      padding: 1rem;
+      max-width: 100%;
+      font-family: $font-raleway;
+      font-size: 1.8rem;
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+
+      h4 {
+        font-weight: 400;
+        flex: 1;
+      }
+      span {
+        align-self: flex-end;
+        font-family: $font-dancing;
+        font-size: 2rem;
+      }
+    }
+    p {
+      width: 100%;
+      padding: 0.5rem 1rem;
+      background-color: var(--color-secondary-light-2);
+      font-size: 1.4rem;
+    }
+  }
+}

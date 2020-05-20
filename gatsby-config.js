@@ -19,7 +19,12 @@ module.exports = {
     `gatsby-image`,
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
-    `gatsby-plugin-sass`,
+    {
+      resolve: `gatsby-plugin-sass`,
+      options: {
+        data: `@import "./src/styles/main.module.scss";`,
+      },
+    },
     {
       resolve: `gatsby-plugin-manifest`,
       options: {

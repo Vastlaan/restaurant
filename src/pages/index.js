@@ -15,9 +15,16 @@ const IndexPage = () => {
     subtitle: "Feel at home",
     link: "menu",
   })
-  const [quickInfo] = useState({
+  const [quickInfo1] = useState({
     title: "Our story",
     suptitle: "let us tell you",
+    paragraph:
+      " Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos temporaodit distinctio veniam fugiat sunt cum illo repudiandae, nobis tempore accusantium excepturi architecto in aliquam, rerum enim aliquid iusto voluptas perferendis. Ea non inventore distinctio laudantium eveniet corrupti quam mollitia.",
+    link: "about",
+  })
+  const [quickInfo2] = useState({
+    title: "Outstanding dishes",
+    suptitle: "take a look at our",
     paragraph:
       " Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos temporaodit distinctio veniam fugiat sunt cum illo repudiandae, nobis tempore accusantium excepturi architecto in aliquam, rerum enim aliquid iusto voluptas perferendis. Ea non inventore distinctio laudantium eveniet corrupti quam mollitia.",
     link: "about",
@@ -32,12 +39,17 @@ const IndexPage = () => {
         </Banner>
       </HeaderHome>
       <Section>
-        <QuickInfo suptitle={quickInfo.suptitle} title={quickInfo.title} />
-        <p>{quickInfo.paragraph}</p>
-        <Link to={`/${quickInfo.link}`}>{quickInfo.link}</Link>
+        <QuickInfo suptitle={quickInfo1.suptitle} title={quickInfo1.title} />
+        <p>{quickInfo1.paragraph}</p>
+        <Link to={`/${quickInfo1.link}`}>{quickInfo1.link}</Link>
       </Section>
       <Section>
         <Gallery></Gallery>
+      </Section>
+      <Section>
+        <QuickInfo suptitle={quickInfo2.suptitle} title={quickInfo2.title} />
+        <p>{quickInfo2.paragraph}</p>
+        <Link to="/menu">More</Link>
       </Section>
     </Layout>
   )

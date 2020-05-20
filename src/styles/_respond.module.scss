@@ -9,6 +9,11 @@
       @content;
     }
   }
+  @if $breakpoint== "xl" {
+    @media screen and (min-width: 85em) {
+      @content;
+    }
+  }
   @if $breakpoint== "xxl" {
     @media screen and (min-width: 100em) {
       @content;

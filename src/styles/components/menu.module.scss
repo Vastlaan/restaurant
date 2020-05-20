@@ -1,0 +1,13 @@
+.menu {
+  padding: 5rem;
+  font-family: $font-raleway;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr;
+  grid-gap: 2rem;
+
+  @include respond(xl) {
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 5rem;
+  }
+}
