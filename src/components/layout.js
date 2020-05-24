@@ -1,4 +1,4 @@
-import React from "react"
+import React, { useReducer } from "react"
 import PropTypes from "prop-types"
 import Navbar from "../components/globals/navbar"
 import Footer from "../components/globals/Footer"

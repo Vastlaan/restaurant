@@ -2,6 +2,7 @@ import React, { useState } from "react"
 import styles from "../../../styles/components/navbar.module.scss"
 import NavbarHeader from "./NavbarHeader"
 import NavbarLinks from "./NavbarLinks"
+
 import NavbarIcons from "../../Icons"
 
 function Navbar() {

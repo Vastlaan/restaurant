@@ -1,5 +1,5 @@
-import React, { useState } from "react"
-import { Link } from "gatsby"
+import React from "react"
+import { useIntl, Link } from "gatsby-plugin-intl"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import HeaderImage from "../images/header_home.jpg"
@@ -10,46 +10,46 @@ import QuickInfo from "../components/QuickInfo"
 import Gallery from "../components/Gallery"
 
 const IndexPage = () => {
-  const [banner] = useState({
-    title: "La Casa",
-    subtitle: "Feel at home",
-    link: "menu",
-  })
-  const [quickInfo1] = useState({
-    title: "Our story",
-    suptitle: "let us tell you",
-    paragraph:
-      " Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos temporaodit distinctio veniam fugiat sunt cum illo repudiandae, nobis tempore accusantium excepturi architecto in aliquam, rerum enim aliquid iusto voluptas perferendis. Ea non inventore distinctio laudantium eveniet corrupti quam mollitia.",
-    link: "about",
-  })
-  const [quickInfo2] = useState({
-    title: "Outstanding dishes",
-    suptitle: "take a look at our",
-    paragraph:
-      " Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos temporaodit distinctio veniam fugiat sunt cum illo repudiandae, nobis tempore accusantium excepturi architecto in aliquam, rerum enim aliquid iusto voluptas perferendis. Ea non inventore distinctio laudantium eveniet corrupti quam mollitia.",
-    link: "about",
-  })
+  const intl = useIntl()
 
   return (
     <Layout>
-      <SEO title="Home" />
+      <SEO
+        title={intl.formatMessage({ id: "index-seo-title" })}
+        description={intl.formatMessage({ id: "index-seo-description" })}
+      />
       <HeaderHome img={HeaderImage}>
-        <Banner title={banner.title} subtitle={banner.subtitle}>
-          <Link to={`/${banner.link}`}>{banner.link}</Link>
+        <Banner
+          title={intl.formatMessage({ id: "index-baner-title" })}
+          subtitle={intl.formatMessage({ id: "index-baner-subtitle" })}
+        >
+          <Link to="/menu">
+            {intl.formatMessage({ id: "index-baner-link" })}
+          </Link>
         </Banner>
       </HeaderHome>
       <Section>
-        <QuickInfo suptitle={quickInfo1.suptitle} title={quickInfo1.title} />
-        <p>{quickInfo1.paragraph}</p>
-        <Link to={`/${quickInfo1.link}`}>{quickInfo1.link}</Link>
+        <QuickInfo
+          suptitle={intl.formatMessage({ id: "index-quick-info-1-suptitle" })}
+          title={intl.formatMessage({ id: "index-quick-info-1-title" })}
+        />
+        <p>{intl.formatMessage({ id: "index-quick-info-1-paragraph" })}</p>
+        <Link to="/reservation">
+          {intl.formatMessage({ id: "index-quick-info-1-link" })}
+        </Link>
       </Section>
       <Section>
-        <Gallery></Gallery>
+        <Gallery />
       </Section>
       <Section>
-        <QuickInfo suptitle={quickInfo2.suptitle} title={quickInfo2.title} />
-        <p>{quickInfo2.paragraph}</p>
-        <Link to="/menu">More</Link>
+        <QuickInfo
+          suptitle={intl.formatMessage({ id: "index-quick-info-2-suptitle" })}
+          title={intl.formatMessage({ id: "index-quick-info-2-title" })}
+        />
+        <p>{intl.formatMessage({ id: "index-quick-info-2-paragraph" })}</p>
+        <Link to="/menu">
+          {intl.formatMessage({ id: "index-quick-info-2-link" })}
+        </Link>
       </Section>
     </Layout>
   )

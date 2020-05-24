@@ -1,29 +1,31 @@
 import React, { useState, useEffect } from "react"
-import { Link } from "gatsby"
+import { useIntl, Link } from "gatsby-plugin-intl"
+import NavbarFlags from "./NavbarFlags"
 
 function NavbarLinks({ styles, open }) {
-  const [links] = useState([
+  const intl = useIntl()
+  const links = [
     {
       id: 0,
       path: "/",
-      name: "home",
+      name: intl.formatMessage({ id: "navbar-links-home" }),
     },
     {
       id: 1,
-      path: "/about/",
-      name: "about",
+      path: "/reservation/",
+      name: intl.formatMessage({ id: "navbar-links-about" }),
     },
     {
       id: 2,
       path: "/menu",
-      name: "menu",
+      name: intl.formatMessage({ id: "navbar-links-menu" }),
     },
     {
       id: 3,
       path: "/contact",
-      name: "contact",
+      name: intl.formatMessage({ id: "navbar-links-contact" }),
     },
-  ])
+  ]
 
   //hardcoded height of <ul>
   const [height, setHeight] = useState({ height: "0rem" })
@@ -37,7 +39,7 @@ function NavbarLinks({ styles, open }) {
       }
       //otherwise manipulate it depends on open state
       else {
-        open ? setHeight({ height: "20rem" }) : setHeight({ height: "0rem" })
+        open ? setHeight({ height: "25rem" }) : setHeight({ height: "0rem" })
       }
     }
     //triggered whenever open state change.
@@ -57,6 +59,7 @@ function NavbarLinks({ styles, open }) {
           </li>
         )
       })}
+      <NavbarFlags styles={styles} />
     </ul>
   )
 }

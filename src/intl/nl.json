@@ -1,0 +1,42 @@
+{
+  "index-seo-title": "Home",
+  "index-seo-description": "In restaurant La Casa serveren wij de lekkerste mediterrane gerechten",
+  "index-seo-author": "@michalantczak",
+  "index-baner-title": "La Casa",
+  "index-baner-subtitle": "Voel je thuis",
+  "index-baner-link": "menu",
+  "index-quick-info-1-title": "Ons verhaal",
+  "index-quick-info-1-suptitle": "laat ons je vertellen",
+  "index-quick-info-1-paragraph": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos temporaodit distinctio veniam fugiat sunt cum illo repudiandae, nobis tempore accusantium excepturi architecto in aliquam, rerum enim aliquid iusto voluptas perferendis. Ea non inventore distinctio laudantium eveniet corrupti quam mollitia.",
+  "index-quick-info-1-link": "reservering",
+  "index-quick-info-2-title": "Heerlijke maaltijden",
+  "index-quick-info-2-suptitle": "neem een kijkje op onze",
+  "index-quick-info-2-paragraph": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos temporaodit distinctio veniam fugiat sunt cum illo repudiandae, nobis tempore accusantium excepturi architecto in aliquam, rerum enim aliquid iusto voluptas perferendis. Ea non inventore distinctio laudantium eveniet corrupti quam mollitia.",
+  "index-quick-info-2-link": "menu",
+
+  "gallery-prefix": "Geweldige",
+
+  "reservation-seo-title": "reservering",
+  "reservation-title": "La Casa",
+  "reservation-subtitle": "Jij maakt deel uit van ons verhaal",
+
+  "contact-seo-title": "Contact",
+  "contact-title": "La Casa",
+  "contact-subtitle": "Wij staan tot uw beschikking",
+
+  "menu-seo-title": "Menu",
+  "menu-title": "La Casa",
+  "menu-subtitle": "Onvergetelijke culinaire ervaring",
+  "menu-quick-info-1": "menu",
+
+  "navbar-links-home": "home",
+  "navbar-links-about": "reservering",
+  "navbar-links-menu": "menu",
+  "navbar-links-contact": "contact",
+
+  "navbar-header-logo": "LaCasa",
+
+  "error-seo-title": "404: NIET GEVONDEN",
+  "error-title": "NIET GEVONDEN",
+  "error-paragraph": "Je hebt een route gevolgd die niet bestaat ... het verdriet."
+}

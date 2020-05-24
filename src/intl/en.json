@@ -1,0 +1,42 @@
+{
+  "index-seo-title": "Home",
+  "index-seo-description": "In La Casa restaurant we serve the finest mediterranean dishes.",
+  "index-seo-author": "@michalantczak",
+  "index-baner-title": "La Casa",
+  "index-baner-subtitle": "Feel at home",
+  "index-baner-link": "menu",
+  "index-quick-info-1-title": "Our story",
+  "index-quick-info-1-suptitle": "let us tell you",
+  "index-quick-info-1-paragraph": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos temporaodit distinctio veniam fugiat sunt cum illo repudiandae, nobis tempore accusantium excepturi architecto in aliquam, rerum enim aliquid iusto voluptas perferendis. Ea non inventore distinctio laudantium eveniet corrupti quam mollitia.",
+  "index-quick-info-1-link": "reservation",
+  "index-quick-info-2-title": "Delicious meals",
+  "index-quick-info-2-suptitle": "take a look at our",
+  "index-quick-info-2-paragraph": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos temporaodit distinctio veniam fugiat sunt cum illo repudiandae, nobis tempore accusantium excepturi architecto in aliquam, rerum enim aliquid iusto voluptas perferendis. Ea non inventore distinctio laudantium eveniet corrupti quam mollitia.",
+  "index-quick-info-2-link": "menu",
+
+  "gallery-prefix": "Awesome",
+
+  "reservation-seo-title": "reservation",
+  "reservation-title": "La Casa",
+  "reservation-subtitle": "You are part of our story",
+
+  "contact-seo-title": "Contact",
+  "contact-title": "La Casa",
+  "contact-subtitle": "We are for your disposal",
+
+  "menu-seo-title": "Menu",
+  "menu-title": "La Casa",
+  "menu-subtitle": "Unforgettable cullinary experience",
+  "menu-quick-info-1": "menu",
+
+  "navbar-links-home": "home",
+  "navbar-links-about": "reservation",
+  "navbar-links-menu": "menu",
+  "navbar-links-contact": "contact us",
+
+  "navbar-header-logo": "LaCasa",
+
+  "error-seo-title": "404: NOT FOUND",
+  "error-title": "NOT FOUND",
+  "error-paragraph": "You just hit a route that doesn't exist... the sadness."
+}

@@ -3,9 +3,9 @@ require("dotenv").config({
 })
 module.exports = {
   siteMetadata: {
-    title: `Gatsby Default Starter`,
-    description: `Kick off your next, great Gatsby project with this default starter. This barebones starter ships with the main Gatsby configuration files you might need.`,
-    author: `@gatsbyjs`,
+    title: `Restaurant La Casa Purmerend`,
+    description: `In La Casa restaurant we serve the finest mediterrainian dishes.`,
+    author: `@michalantczak`,
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
@@ -35,6 +35,19 @@ module.exports = {
         theme_color: `#663399`,
         display: `minimal-ui`,
         icon: `src/images/gatsby-icon.png`, // This path is relative to the root of the site.
+      },
+    },
+    {
+      resolve: `gatsby-plugin-intl`,
+      options: {
+        // language JSON resource path
+        path: `${__dirname}/src/intl`,
+        // supported language
+        languages: [`en`, `nl`],
+        // language file path
+        defaultLanguage: `nl`,
+        // option to redirect to `/ko` when connecting `/`
+        redirect: true,
       },
     },
     {
