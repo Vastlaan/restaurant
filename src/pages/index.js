@@ -23,7 +23,7 @@ const IndexPage = () => {
           title={intl.formatMessage({ id: "index-baner-title" })}
           subtitle={intl.formatMessage({ id: "index-baner-subtitle" })}
         >
-          <Link to="/menu">
+          <Link to="/reservation">
             {intl.formatMessage({ id: "index-baner-link" })}
           </Link>
         </Banner>
@@ -34,7 +34,7 @@ const IndexPage = () => {
           title={intl.formatMessage({ id: "index-quick-info-1-title" })}
         />
         <p>{intl.formatMessage({ id: "index-quick-info-1-paragraph" })}</p>
-        <Link to="/reservation">
+        <Link to="/contact">
           {intl.formatMessage({ id: "index-quick-info-1-link" })}
         </Link>
       </Section>

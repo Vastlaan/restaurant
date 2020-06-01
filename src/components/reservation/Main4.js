@@ -8,19 +8,30 @@ export default function Main4({
   number,
   selectedDate,
   time,
+  intl,
 }) {
   return (
     <div className={styles.main__confirmation}>
-      <p>Your Name: {name}</p>
-      <p>Your Email: {email}</p>
-      <p>Your Phone: {phone}</p>
-      <p>Selected Date: {selectedDate}</p>
-      <p>Selected Time : {time}</p>
-      <p>Number of guests : {number}</p>
-      <h6>
-        By clicking the Reserve button I confirm that all guests have no
-        sympthoms related to corona virus, like fever, runny nose, caughing etc.{" "}
-      </h6>
+      <p>
+        {intl.formatMessage({ id: "reservation-main3-name" })} {name}
+      </p>
+      <p>
+        {intl.formatMessage({ id: "reservation-main3-email" })} {email}
+      </p>
+      <p>
+        {intl.formatMessage({ id: "reservation-main3-phone" })} {phone}
+      </p>
+      <p>
+        {intl.formatMessage({ id: "reservation-main4-selectedDate" })}{" "}
+        {selectedDate}
+      </p>
+      <p>
+        {intl.formatMessage({ id: "reservation-main4-selectedTime" })} {time}
+      </p>
+      <p>
+        {intl.formatMessage({ id: "reservation-main4-number" })} {number}
+      </p>
+      <h6>{intl.formatMessage({ id: "reservation-main4-disclaimer" })}</h6>
     </div>
   )
 }

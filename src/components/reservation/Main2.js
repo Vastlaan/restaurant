@@ -1,6 +1,6 @@
 import React from "react"
 
-export default function Main2({ time, chooseTime, styles }) {
+export default function Main2({ time, chooseTime, styles, intl }) {
   const times = [
     "16:00",
     "16:30",
@@ -18,13 +18,15 @@ export default function Main2({ time, chooseTime, styles }) {
   return (
     <div className={styles.main__times}>
       {time ? (
-        <p className={styles.main__times_info}>You have selected: {time}</p>
+        <p className={styles.main__times_info}>
+          {intl.formatMessage({ id: "reservation-main2-1" })} {time}
+        </p>
       ) : (
         <p
           style={{ color: "var(--color-primary-dark)" }}
           className={styles.main__times_info}
         >
-          Please select time
+          {intl.formatMessage({ id: "reservation-main2-2" })}
         </p>
       )}
       {times.map((time, i) => {

@@ -25,8 +25,10 @@ function Reservation() {
       </HeaderPage>
       <Section>
         <QuickInfo
-          title="reservation system"
-          suptitle="book the table with our"
+          title={intl.formatMessage({ id: "reservation-quickInfo-title" })}
+          suptitle={intl.formatMessage({
+            id: "reservation-quickInfo-suptitle",
+          })}
         />
       </Section>
       <ReservationComponent />

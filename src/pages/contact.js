@@ -5,6 +5,7 @@ import SEO from "../components/seo"
 import HeaderImage from "../images/header_contact.jpg"
 import { HeaderPage } from "../components/globals/header"
 import Banner from "../components/Banner"
+import ContactForm from "../components/ContactForm"
 
 function Contact() {
   const intl = useIntl()
@@ -20,6 +21,7 @@ function Contact() {
           subtitle={intl.formatMessage({ id: "contact-subtitle" })}
         />
       </HeaderPage>
+      <ContactForm />
     </Layout>
   )
 }

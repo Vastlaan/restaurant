@@ -2,19 +2,19 @@ import React from "react"
 import DayPicker from "react-day-picker"
 import "react-day-picker/lib/style.css"
 
-export default function Main1({ selectedDate, handleDayClick, styles }) {
+export default function Main1({ selectedDate, handleDayClick, styles, intl }) {
   return (
     <div>
       {selectedDate ? (
         <div className={styles.main__info}>
-          You have selected: {selectedDate}
+          {intl.formatMessage({ id: "reservation-main1-1" })} {selectedDate}
         </div>
       ) : (
         <div
           style={{ color: "var(--color-primary-dark)" }}
           className={styles.main__info}
         >
-          Please select day
+          {intl.formatMessage({ id: "reservation-main1-2" })}
         </div>
       )}
       <DayPicker

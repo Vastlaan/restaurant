@@ -6,12 +6,17 @@ export default function Main3({
   setEmail,
   setPhone,
   setNumber,
+  intl,
 }) {
   return (
     <div className={styles.main__data}>
-      <h3 className={styles.info}>All fields are required</h3>
+      <h3 className={styles.info}>
+        {intl.formatMessage({ id: "reservation-main3-header" })}
+      </h3>
       <div className={styles.main__data_field}>
-        <label htmlFor="name">Your Name:</label>
+        <label htmlFor="name">
+          {intl.formatMessage({ id: "reservation-main3-name" })}
+        </label>
         <input
           type="text"
           name="name"
@@ -20,7 +25,9 @@ export default function Main3({
         />
       </div>
       <div className={styles.main__data_field}>
-        <label htmlFor="email">Your Email:</label>
+        <label htmlFor="email">
+          {intl.formatMessage({ id: "reservation-main3-email" })}
+        </label>
         <input
           type="email"
           name="email"
@@ -29,7 +36,9 @@ export default function Main3({
         />
       </div>
       <div className={styles.main__data_field}>
-        <label htmlFor="tel">Your Phone Number:</label>
+        <label htmlFor="tel">
+          {intl.formatMessage({ id: "reservation-main3-phone" })}
+        </label>
         <input
           type="tel"
           name="phone"
@@ -38,8 +47,10 @@ export default function Main3({
         />
       </div>
       <div className={styles.main__data_field}>
-        <label htmlFor="number">How many guests:</label>
-        <h6>Maximum 6 person</h6>
+        <label htmlFor="number">
+          {intl.formatMessage({ id: "reservation-main3-guests" })}
+        </label>
+        <h6>{intl.formatMessage({ id: "reservation-main3-max" })}</h6>
         <input
           type="number"
           name="number"

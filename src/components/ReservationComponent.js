@@ -1,4 +1,5 @@
 import React, { useState } from "react"
+import { useIntl } from "gatsby-plugin-intl"
 import dateFormat from "dateformat"
 import Main1 from "./reservation/Main1"
 import Main2 from "./reservation/Main2"
@@ -14,6 +15,8 @@ export default function ReservationComponent() {
   const [email, setEmail] = useState(undefined)
   const [phone, setPhone] = useState(undefined)
   const [number, setNumber] = useState(undefined)
+
+  const intl = useIntl()
 
   const reserve = e => {
     e.preventDefault()
@@ -66,7 +69,7 @@ export default function ReservationComponent() {
     <form className={styles.reservation} onSubmit={reserve}>
       <div className={styles.count}>
         <p>
-          Step: <span>{step}</span>
+          {intl.formatMessage({ id: "reservation-step" })} <span>{step}</span>
         </p>
       </div>
       <div className={styles.main}>
@@ -75,9 +78,15 @@ export default function ReservationComponent() {
             selectedDate={selectedDate}
             handleDayClick={handleDayClick}
             styles={styles}
+            intl={intl}
           />
         ) : step === 2 ? (
-          <Main2 time={time} chooseTime={chooseTime} styles={styles} />
+          <Main2
+            time={time}
+            chooseTime={chooseTime}
+            styles={styles}
+            intl={intl}
+          />
         ) : step === 3 ? (
           <div>
             <Main3
@@ -86,6 +95,7 @@ export default function ReservationComponent() {
               setEmail={setEmail}
               setPhone={setPhone}
               setNumber={setNumber}
+              intl={intl}
             />
           </div>
         ) : (
@@ -97,13 +107,14 @@ export default function ReservationComponent() {
             number={number}
             selectedDate={selectedDate}
             time={time}
+            intl={intl}
           />
         )}
       </div>
       <div className={styles.buttons}>
         {step > 1 ? (
           <button className={styles.buttons__left} onClick={previous}>
-            Back
+            {intl.formatMessage({ id: "reservation-button-back" })}
           </button>
         ) : null}
         {step === 4 ? (
@@ -112,11 +123,11 @@ export default function ReservationComponent() {
             type="submit"
             onClick={reserve}
           >
-            Reserve Table
+            {intl.formatMessage({ id: "reservation-button-reserve" })}
           </button>
         ) : (
           <button className={styles.buttons__right} onClick={next}>
-            Next
+            {intl.formatMessage({ id: "reservation-button-next" })}
           </button>
         )}
       </div>

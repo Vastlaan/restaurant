@@ -13,6 +13,7 @@
   @if $type == "secondary" {
     color: var(--color-font);
     border: 1px solid var(--color-font);
+    background-color: var(--bg-color);
     &:hover {
       background-color: var(--color-font);
       color: var(--bg-color);
