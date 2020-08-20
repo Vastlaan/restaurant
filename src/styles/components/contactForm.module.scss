@@ -5,7 +5,7 @@
   flex-direction: column;
   justify-content: space-evenly;
 
-  @include respond(m) {
+  @include respond(l) {
     flex-direction: row;
   }
 }
@@ -14,18 +14,29 @@
   flex: 0 0 60%;
   display: flex;
   flex-direction: column;
+  padding: 1rem;
 
   h1 {
     font-family: $font-exo;
     font-weight: 300;
     margin-bottom: 2rem;
+    text-align: center;
+
+    @include respond(l) {
+      text-align: left;
+    }
   }
 
   div {
     width: 90%;
     display: grid;
-    grid-template-columns: 15rem 1fr;
+    grid-template-columns: 1fr;
     margin: 1rem auto;
+
+    @include respond(m) {
+      grid-template-columns: 15rem 1fr;
+    }
+
     label {
       font-size: 2rem;
     }
@@ -49,22 +60,39 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  padding: 1rem;
 
   h1 {
     font-family: $font-exo;
     font-weight: 300;
     margin-bottom: 2rem;
+    text-align: center;
+    @include respond(l) {
+      text-align: left;
+    }
   }
   div {
-    margin: 1rem;
-    width: 80%;
+    margin: 1rem auto;
+    width: 100%;
     font-size: 2.5rem;
-    display: grid;
-    grid-template-columns: 20% 1fr;
-    justify-items: center;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+
+    @include respond(l) {
+      justify-content: flex-start;
+      flex-direction: row;
+    }
+
+    svg {
+      margin-right: 2rem;
+    }
+
     p {
-      justify-self: right;
-      text-align: right;
+      text-align: center;
+      @include respond(l) {
+        text-align: left;
+      }
     }
   }
 }

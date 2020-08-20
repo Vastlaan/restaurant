@@ -52,6 +52,7 @@ function ContactForm() {
 
       <div className={styles.info}>
         <h1>{intl.formatMessage({ id: "contact-form-info-header" })}</h1>
+
         <div>
           <RiPhoneLine style={{ color: "green", fontSize: "3rem" }} />
           <p>06 82 30 70 51</p>
